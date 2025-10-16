@@ -1,21 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Mi juego de Scratch</title>
-  </head>
-  <body style="background-color: #f5f5f5; text-align: center; font-family: Arial, sans-serif;">
-    <h1>🎮 ¡Jugá con Marina!</h1>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi juego inspirado en mi libro</title>
+<style>
+  /* Fondo y tipografía */
+  body {
+    background-image: url('https://i.imgur.com/3zYqT9V.jpg'); /* Podés cambiar la URL por tu fondo */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    color: #4B3621;
+  }
 
-    <iframe src="https://scratch.mit.edu/projects/1220658249/embed"
-            allowtransparency="true"
-            width="485"
-            height="402"
-            frameborder="0"
-            scrolling="no"
-            allowfullscreen>
-    </iframe>
+  /* Título principal */
+  h1 {
+    color: #8B4513;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-top: 40px;
+  }
 
-    <p>Presioná la bandera verde para empezar, agarrá todos los recuerdos que puedas 💛</p>
-  </body>
+  /* Subtítulo o descripción */
+  p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* Estilo del iframe del juego */
+  iframe {
+    border: 5px solid #8B4513;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    margin-bottom: 40px;
+  }
+
+  /* Botón de reinicio */
+  .boton-reiniciar {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #8B4513;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  }
+
+  .boton-reiniciar:hover {
+    background-color: #A0522D;
+    transform: scale(1.05);
+  }
+
+  /* Pequeños detalles decorativos */
+  .decorativo {
+    position: absolute;
+    width: 80px;
+    opacity: 0.8;
+  }
+
+  .decorativo1 { top: 20px; left: 20px; }
+  .decorativo2 { top: 100px; right: 50px; }
+  .decorativo3 { bottom: 50px; left: 80px; }
+</style>
+</head>
+<body>
+
+<!-- Título -->
+<h1>🎮 ¡Jugá mi juego!</h1>
+
+<!-- Subtítulo -->
+<p>Inspirado en el mundo de mi libro</p>
+
+<!-- Juego de Scratch -->
+<iframe src="https://scratch.mit.edu/projects/1220658249/embed"
+        allowtransparency="true"
+        width="485"
+        height="402"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen>
+</iframe>
+
+<!-- Botón de reinicio (opcional, simplemente recarga la página) -->
+<br>
+<a href="" class="boton-reiniciar">🔄 Reiniciar juego</a>
+
+<!-- Detalles decorativos (puedes poner imágenes de tu libro o personajes) -->
+<img src="https://i.imgur.com/oPq0k6Z.png" class="decorativo decorativo1">
+<img src="https://i.imgur.com/qN1KqzS.png" class="decorativo decorativo2">
+<img src="https://i.imgur.com/f0lE8vT.png" class="decorativo decorativo3">
+
+</body>
 </html>
