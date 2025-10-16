@@ -4,18 +4,23 @@
 <meta charset="UTF-8">
 <title>Juego basado en el cuento: Sabores de Ausencia</title>
 <style>
-  /* Fondo y tipografía */
+  /* Importar fuente personalizada */
+  @font-face {
+    font-family: "DK Lemon Yellow Sun";
+    src: url("fonts/876db336-b520-4628-a3c9-4acb220783e7.woff2") format("woff2");
+  }
+
+  /* Fondo y tipografía general */
   body {
-    background-image: url('https://static.vecteezy.com/system/resources/previews/022/966/752/original/cartoon-public-city-park-with-green-trees-benches-and-lake-summer-outdoor-scenery-urban-park-nature-landscape-illustration-vector.jpg'); /* Podés cambiar la URL por tu fondo */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/022/966/752/original/cartoon-public-city-park-with-green-trees-benches-and-lake-summer-outdoor-scenery-urban-park-nature-landscape-illustration-vector.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
-  font-family: "DK Lemon Yellow Sun.woff2";
-  src: url("fonts/876db336-b520-4628-a3c9-4acb220783e7.woff2") format("woff2");
-}, serif;
+    font-family: "DK Lemon Yellow Sun", sans-serif;
     margin: 0;
     padding: 0;
-    color: #00000;
+    color: #000;
+    zoom: 1.3; /* hace que todo se vea más grande */
   }
 
   /* Título principal */
@@ -26,7 +31,7 @@
     margin-top: 40px;
   }
 
-  /* Subtítulo o descripción */
+  /* Subtítulo */
   p {
     font-size: 20px;
     margin-bottom: 30px;
@@ -38,6 +43,8 @@
     border-radius: 12px;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
     margin-bottom: 40px;
+    width: 600px;
+    height: 500px;
   }
 
   /* Botón de reinicio */
@@ -59,7 +66,7 @@
     transform: scale(1.05);
   }
 
-  /* Pequeños detalles decorativos */
+  /* Detalles decorativos */
   .decorativo {
     position: absolute;
     width: 80px;
@@ -77,26 +84,24 @@
 <h1>🎮 ¡Jugá con Marina!</h1>
 
 <!-- Subtítulo -->
-<p>Ayudá a Marina a recolectar los recuerdos de su abuela, agarrá todos los que puedas</p>
+<p>Ayudá a Marina a recolectar los recuerdos de su abuela, agarrá todos los que puedas.</p>
 
 <!-- Juego de Scratch -->
 <iframe src="https://scratch.mit.edu/projects/1220658249/embed"
         allowtransparency="true"
-        width="485"
-        height="402"
         frameborder="0"
         scrolling="no"
         allowfullscreen>
 </iframe>
 
-<!-- Botón de reinicio (opcional, simplemente recarga la página) -->
+<!-- Botón de reinicio -->
 <br>
 <a href="" class="boton-reiniciar">🔄 Reiniciar juego</a>
 
-<!-- Detalles decorativos (puedes poner imágenes de tu libro o personajes) -->
+<!-- Detalles decorativos -->
 <img src="https://static.vecteezy.com/system/resources/previews/019/005/559/original/white-dove-illustrations-png.png" class="decorativo decorativo1">
 <img src="https://static.vecteezy.com/system/resources/previews/019/005/559/original/white-dove-illustrations-png.png" class="decorativo decorativo2">
 <img src="https://static.vecteezy.com/system/resources/previews/019/005/559/original/white-dove-illustrations-png.png" class="decorativo decorativo3">
 
-<body style="zoom: 1.3;">
+</body>
 </html>
